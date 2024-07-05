@@ -9,4 +9,20 @@ La estructura d'Arete, és totalment modular i aquests moduls és poden utilitza
   - verificació de les variables (pipe,
   - inicialització de la finestra principal
   - sortir
--Finestra.py: s'encarrega 
+
+-Finestra.py: S'encarrega de les operatives de les diferents finestres, posició, tamany i mòdul de contingut, aixi com de monitoritzar la pipe per a eliminar-les, amagar-les, mostrar-les...
+  - Genera la finestra principal
+  - Genera el esquema de posicionament
+  - Monitoritza la pipe
+  - Obra i posiciona noves finestres.
+  - Mostra o amaga finestres existents.
+  - Tanca finestres amb processos acabats.
+
+-Moduls de finestra (F*.py): són els pensats per a executar-se dins d'una finestra que mostrarà diferents opcions o informació sobre el procés.
+  Exemples:
+  - Finestra principal.
+  - Finestra de chat.
+  - Per a visualitzar camares.
+  - ...
+
+-Moduls de codi (M*.py): són aquells destinats a realitzar petites funcions a través d'un
